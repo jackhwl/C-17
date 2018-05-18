@@ -20,11 +20,11 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{7FBBFD04-1F65-4F4F-A349-3D4AE5640891}</ProjectGuid>
+    <ProjectGuid>{D7DDC1B5-0BFD-4936-85A1-089155BE4B70}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>cplus17</RootNamespace>
+    <RootNamespace>smartPointer</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
-    <ProjectName>RullOf3</ProjectName>
+    <ProjectName>SmartPointer</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -148,13 +148,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="Person.h" />
-    <ClInclude Include="Resource.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="FreeStore.cpp" />
     <ClCompile Include="Person.cpp" />
     <ClCompile Include="Resource.cpp" />
+    <ClCompile Include="SmartPointer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Person.h" />
+    <ClInclude Include="Resource.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
