@@ -20,11 +20,11 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{D7DDC1B5-0BFD-4936-85A1-089155BE4B70}</ProjectGuid>
+    <ProjectGuid>{C77EED8D-1FD5-4511-BBB7-6BADBAF9403D}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>smartPointer</RootNamespace>
+    <RootNamespace>Indirection</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
-    <ProjectName>20.SmartPointer</ProjectName>
+    <ProjectName>30.Indirection</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -149,12 +149,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Person.cpp" />
-    <ClCompile Include="Resource.cpp" />
-    <ClCompile Include="SmartPointer.cpp" />
+    <ClCompile Include="PointersAndInheritance.cpp" />
+    <ClCompile Include="Tweeter.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Person.h" />
-    <ClInclude Include="Resource.h" />
+    <ClInclude Include="Tweeter.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
