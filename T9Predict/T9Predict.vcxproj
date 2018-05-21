@@ -20,17 +20,28 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Engine.h" />
+    <ClInclude Include="StringToDigitsEncoder.h" />
+    <ClInclude Include="WordsNode.h" />
     <ClInclude Include="WordsTree.h" />
+    <ClInclude Include="WordsTreeException.h" />
+    <ClInclude Include="YetAnotherException.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Engine.cpp" />
+    <ClCompile Include="StringToDigitsEncoder.cpp" />
     <ClCompile Include="WordsTree.cpp" />
+    <ClCompile Include="WordsTreeException.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{4673D0A2-FC67-43F6-9569-AC50AEEE3444}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>T9Predict</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccProvider>SAK</SccProvider>
+    <ProjectName>T9Predict</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
