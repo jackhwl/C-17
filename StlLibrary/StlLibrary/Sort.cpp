@@ -9,7 +9,7 @@
 #include <map>
 using namespace std;
 
-int main()
+int main2()
 {
 	vector<int> v{ 4,1,0,1,-2,3,7,-6,2,0,0,-9,9 };
 	auto v2 = v;

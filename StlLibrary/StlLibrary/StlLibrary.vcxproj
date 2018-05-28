@@ -152,6 +152,7 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Compare.cpp" />
     <ClCompile Include="Find.cpp" />
     <ClCompile Include="Sort.cpp" />
     <ClCompile Include="stdafx.cpp">
