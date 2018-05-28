@@ -8,7 +8,7 @@
 #include <map>
 using namespace std;
 
-int main()
+int main1()
 {
 	vector<int> v{ 2, 4, 6, 6, 1, 3, -2, 0, 11, 2, 3, 2, 4, 4, 2, 4 };
 	string s{ "Hello I am a sentence" };
