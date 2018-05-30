@@ -26,7 +26,7 @@
     <ClCompile Include="stdafx.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Boost.cpp">
+    <ClCompile Include="ProjgramOptions.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
