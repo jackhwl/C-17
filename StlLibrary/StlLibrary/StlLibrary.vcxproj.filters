@@ -29,16 +29,19 @@
     <ClCompile Include="stdafx.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Sort.cpp">
+    <ClCompile Include="Sort2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Count.cpp">
+    <ClCompile Include="Find1.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Find.cpp">
+    <ClCompile Include="Count0.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Compare.cpp">
+    <ClCompile Include="Compare3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Generating4.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

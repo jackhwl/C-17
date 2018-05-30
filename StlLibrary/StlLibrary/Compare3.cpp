@@ -6,7 +6,7 @@
 
 using namespace std;
 
-int main() {
+int main3() {
 	vector<int> a{ 1,2,3,4,5 };
 	vector<int> b{ 1,2,0,4 };
 	//bool same = a.size() == b.size();
