@@ -3,6 +3,7 @@
 #include <algorithm>
 #include <numeric>
 #include <string>
+#include "Resource.h"
 
 using namespace std;
 
@@ -28,5 +29,22 @@ int main() {
 	copy_backward(begin(v3), end(v3), end(source));
 
 	copy_backward(begin(source), end(source)-1, end(source));
+
+	auto newend = remove(begin(source), end(source), 3);
+	int s = source.size();
+	int logicalsize = newend - begin(source);
+	source.erase(newend, end(source));
+
+	source = { 3, 6, 3, 0, -2, 5 };
+	source.erase(remove(begin(source), end(source), 3), end(source));
+
+	vector<Resource> vr(2);
+	vr[0].setValue(8);
+	vr[1].setValue(9);
+
+	auto newend2 = remove_if(begin(vr), end(vr), [](const Resource& r) {return r.getvalue() == 8; });
+	vr.erase(newend2, end(vr));
+
+
 	return 0;
 }

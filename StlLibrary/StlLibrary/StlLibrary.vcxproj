@@ -148,6 +148,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Employee.h" />
+    <ClInclude Include="Resource.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
@@ -155,6 +156,7 @@
     <ClCompile Include="Compare3.cpp" />
     <ClCompile Include="Find1.cpp" />
     <ClCompile Include="Generating4.cpp" />
+    <ClCompile Include="Resource.cpp" />
     <ClCompile Include="Sort2.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
