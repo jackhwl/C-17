@@ -7,7 +7,7 @@
 
 using namespace std;
 
-int main() {
+int main4() {
 	vector<int> source{ 3, 6, 1, 0, -2, 5 };
 	vector<int> v2(source.size());
 
@@ -45,6 +45,42 @@ int main() {
 	auto newend2 = remove_if(begin(vr), end(vr), [](const Resource& r) {return r.getvalue() == 8; });
 	vr.erase(newend2, end(vr));
 
+	vector<int> v6(10);
+	fill(begin(v6), end(v6), 1);
+	fill_n(begin(v6), 6, 2);
+	iota(begin(v6), end(v6), 3);
+
+	int index = 10;
+	generate(begin(v6), end(v6), [&index]() {return --index; });
+	source = v6;
+	index = 1;
+	generate_n(begin(v6), 7, [&index]() {return (index *= 2); });
+
+	replace(begin(v6), end(v6), 2, 7);
+	replace_if(begin(v6), end(v6), [](int elem) {return elem < 16; }, 7);
+
+	transform(begin(source), end(source), begin(source), [](int elem) {return elem * 2; });
+	transform(begin(source), end(source) - 1, begin(source) + 1, begin(v6), [](int elem1, int elem2) {return elem1 - elem2; });
+
+	iota(begin(v6), end(v6), 1);
+	iota(begin(source), end(source), 2);
+	vector<int> v7(10);
+	transform(begin(source), end(source), begin(v6), begin(v7), [](int elem1, int elem2) {return elem1 + elem2; });
+
+	unique(begin(v2), end(v2));
+	v2[3] = -2;
+	auto v8 = v2;
+	//unique(begin(v2), end(v2));
+	v2.erase(unique(begin(v2), end(v2)), end(v2));
+	unique_copy(begin(v8), end(v8), begin(v7));
+
+	string sentence = "Hello, world!";
+	reverse(begin(sentence), end(sentence));
+
+	iter_swap(begin(v7), end(v7) - 1);
+
+	string orig = "             ";
+	reverse_copy(begin(sentence), end(sentence), begin(orig));
 
 	return 0;
 }

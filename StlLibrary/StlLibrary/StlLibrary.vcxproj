@@ -156,6 +156,7 @@
     <ClCompile Include="Compare3.cpp" />
     <ClCompile Include="Find1.cpp" />
     <ClCompile Include="Generating4.cpp" />
+    <ClCompile Include="Iteraators5.cpp" />
     <ClCompile Include="Resource.cpp" />
     <ClCompile Include="Sort2.cpp" />
     <ClCompile Include="stdafx.cpp">
