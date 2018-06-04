@@ -8,7 +8,7 @@
 
 using namespace std;
 
-int main() {
+int main5() {
 	vector<int> v1(10);
 	fill(begin(v1), end(v1), 1);
 	fill_n(begin(v1), 6, 2);
