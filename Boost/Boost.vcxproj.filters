@@ -29,13 +29,19 @@
     <ClCompile Include="stdafx.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ProjgramOptions1.cpp">
+    <ClCompile Include="1_ProjgramOptions.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Main2.cpp">
+    <ClCompile Include="2_Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Any3.cpp">
+    <ClCompile Include="3_Any.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="4_SignalsFundamentals.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="5_SignalsCustomization.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
