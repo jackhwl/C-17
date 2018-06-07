@@ -20,7 +20,7 @@ void third()
 {
 	cout << "third" << endl;
 }
-int main(int argc, char* argv[])
+int main5(int argc, char* argv[])
 {
 	signal<void()> s;
 	s.connect(third);
