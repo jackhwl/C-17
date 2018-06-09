@@ -72,7 +72,7 @@ public:
 
 
 
-int main() {
+int main2() {
 	vector<int> v1{ 3,4,2 };
 	vector<int> v2{ 4,6,5 };
 	Solution myso;
