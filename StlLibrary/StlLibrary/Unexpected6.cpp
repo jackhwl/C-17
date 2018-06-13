@@ -6,7 +6,7 @@
 
 using namespace std;
 
-int main() {
+int main6() {
 	int a{ 4 }, b{ 5 };
 	swap(a, b);
 

@@ -18,11 +18,10 @@ using namespace std;
 
 class Solution {
 public:
-	//11.45%
 	int lengthOfLongestSubstring(string s) {
 		if (s.length() <= 1) return s.length();
 		int ssize = 0;
-		for (int i = 0; i < s.length() && (s.length()-i) > ssize; i++) {
+		for (int i = 0; i < s.length() && (s.length() - i) > ssize; i++) {
 			vector<char> clist;
 			for (char c : s.substr(i, s.length())) {
 				auto result = find(begin(clist), end(clist), c);
