@@ -35,5 +35,8 @@
     <ClCompile Include="003.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="js.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
