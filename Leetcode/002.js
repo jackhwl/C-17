@@ -32,3 +32,22 @@ var addTwoNumbers = function (l1, l2) {
     lsum.next = addTwoNumbers(l1AddExtra, l2.next);
     return lsum;
 };
+
+// no recusion
+var addTwoNumbers = function (l1, l2) {
+    let extra = 0;
+    let result = [];
+    let n1 = l1;
+    let n2 = l2;
+    while (n1 || n2 || extra) {
+        if (!n1) n1 = { val: 0, next: null };
+        if (!n2) n2 = { val: 0, next: null };
+        let mod = n1.val + n2.val + extra;
+        result.push(mod % 10);
+        extra = mod > 9 ? 1 : 0;
+        n1 = n1.next;
+        n2 = n2.next;
+    }
+    return result;
+
+};
