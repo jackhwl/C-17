@@ -21,24 +21,19 @@
     <ClInclude Include="targetver.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="DynamicLib.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="001.cpp">
+    <ClCompile Include="DynamicLib.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="002.cpp">
+    <ClCompile Include="dllmain.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="003.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="001.js" />
-    <None Include="002.js" />
-    <None Include="goodpart.js" />
   </ItemGroup>
 </Project>

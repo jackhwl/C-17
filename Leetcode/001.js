@@ -8,7 +8,7 @@
 var twoSum = function (nums, target) {
     for (var i = 0; i < nums.length; i++) {
         var n2 = nums.lastIndexOf(target - nums[i]);
-        if (n2 > 0 && n2 != i) {
+        if (n2 > 0 && n2 !== i) {
             return [i, n2];
         }
     }

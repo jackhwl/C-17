@@ -15,30 +15,13 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="stdafx.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="targetver.h">
+    <ClInclude Include="foo.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="stdafx.cpp">
+    <ClCompile Include="foo.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="001.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="002.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="003.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="001.js" />
-    <None Include="002.js" />
-    <None Include="goodpart.js" />
   </ItemGroup>
 </Project>

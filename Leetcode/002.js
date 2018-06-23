@@ -1,16 +1,16 @@
 // 96.15%
 var addTwoNumbers = function (l1, l2) {
-    if (l1 == null) return l2;
-    if (l2 == null) return l1;
+    if (l1 === null) return l2;
+    if (l2 === null) return l1;
     let mod = (l1.val + l2.val) % 10;
     let extra = (l1.val + l2.val) > 9 ? 1 : 0;
 
     let lsum = new ListNode(mod);
-    if (l1.next == null) {
+    if (l1.next === null) {
         lsum.next = extra > 0 ? addTwoNumbers(new ListNode(extra), l2.next) : l2.next;
         return lsum;
     }
-    if (l2.next == null) {
+    if (l2.next === null) {
         lsum.next = extra > 0 ? addTwoNumbers(new ListNode(extra), l1.next) : l1.next;
         return lsum;
     }
@@ -21,8 +21,8 @@ var addTwoNumbers = function (l1, l2) {
 };
 
 var addTwoNumbers = function (l1, l2) {
-    if (l1 == null) return l2;
-    if (l2 == null) return l1;
+    if (l1 === null) return l2;
+    if (l2 === null) return l1;
     let mod = (l1.val + l2.val) % 10;
     let extra = (l1.val + l2.val) > 9 ? 1 : 0;
 
