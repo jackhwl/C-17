@@ -31,8 +31,8 @@ struct ListNode {
 };
 class Solution {
 public:
-	//77.05%
-	ListNode * addTwoNumbers(ListNode* l1, ListNode* l2) {
+	//77.05%, 97.14%
+	ListNode * addTwoNumbers0(ListNode* l1, ListNode* l2) {
 		if (l1 == NULL) return l2;
 		if (l2 == NULL) return l1;
 		int mod = (l1->val + l2->val) % 10;
@@ -52,6 +52,46 @@ public:
 		auto l2withextra = extra > 0 ? addTwoNumbers(new ListNode(extra), l2->next) : l2->next;
 		lsum->next = addTwoNumbers(l1->next, l2withextra);
 		return lsum;
+	}
+
+	//static const auto _____ = []()
+	//{
+	//	ios::sync_with_stdio(false);
+	//	cin.tie(nullptr);
+	//	return nullptr;
+	//}();
+	// 45% 99.08%
+	ListNode * addTwoNumbers1(ListNode* l1, ListNode* l2) {
+		ListNode * result = new ListNode(0);
+		ListNode * curr = result;
+		int extra = 0;
+		while (l1 != NULL || l2 != NULL || extra > 0) {
+			if (l1 == NULL) l1 = new ListNode(0);
+			if (l2 == NULL) l2 = new ListNode(0);
+			int mod = l1->val + l2->val + extra;
+			extra = mod > 9 ? 1 : 0;
+			curr->next = new ListNode(mod % 10);
+			curr = curr->next;
+			l1 = l1->next;
+			l2 = l2->next;
+		}
+		return result->next;
+	}
+	ListNode * addTwoNumbers(ListNode* l1, ListNode* l2) {
+		ListNode * result = new ListNode(0);
+		ListNode * curr = result;
+		int extra = 0;
+		while (l1 || l2) {
+			int sum = ((l1)? l1->val : 0) + ((l2)? l2->val:0) + extra;
+			extra = sum / 10;
+			curr->next = new ListNode(sum % 10);
+			curr = curr->next;
+			if(l1) l1 = l1->next;
+			if(l2) l2 = l2->next;
+		}
+		if (extra) curr->next = new ListNode(extra);
+
+		return result->next;
 	}
 
 	ListNode* generateListNode(vector<int> v1) {
